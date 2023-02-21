@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./fontawesome-free-5.15.4-web/fontawesome-free-5.15.4-web/css/all.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="./images/1.jpg"></a>
+            <div class="nav-links" id="navLinks">
+                <!-- the id here is put for the implementation of javascript -->
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <!-- Fontawesome added untop of the ul link to close the navbar (the onclick i just added is for the navbar to be responsive with the help of javascript) -->
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">REGISTER</a></li>
+                    <li><a href="Blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+            <!-- outside the entire div that holds the link but within the parent nav housing the div that holds the link so as to be beside the links (the onclick showmenu i added now is just for it to be responsive with the help of javascript) -->
+        </nav>
+        <h1>Contact Us</h1>
+    </section><!-- section1 ends -->
+
+
+    <!------------- Contact us content------------ -->
+    <section class="location">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1529.3223153293015!2d-75.1968216!3d39.949338!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1647733478923!5m2!1sen!2sng"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fas fa-home"></i>
+                    <span>
+                        <h5>Victoria Island</h5>
+                        <p>Lagos, Nigeria</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fas fa-phone"></i>
+                    <span>
+                        <h5>07015109571</h5>
+                        <p>Monday, Tuesday,Thursday, 10AM to 6PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fas fa-envelope-open"></i>
+                    <span>
+                        <h5>emmanuel_olonade@yahoo.com</h5>
+                        <p>email your query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="form-handler.php" method="post">
+                    <input type="text" name="name" placeholder="Enter your name" required>
+                    <input type="email" name="email" placeholder="Enter email address" required>
+                    <input type="text" name="subject" placeholder="Enter your subject" required>
+                    <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                    <button type="submit" class="hero-btn red-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <!-- -------footer------- -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea non ex, atque rem alias beatae eius adipisci
+            quibusdam impedit. Odit porro fugit eaque esse pariatur. <br> ipsum dolor sit amet consectetur adipisicing
+            elit. Maxime maiores, esse perspiciatis asperiores laborum iste quia autem reprehenderit?</p>
+        <div class="icons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin-in"></i>
+        </div>
+        <p>Made with <i class="far fa-heart"></i> by OLONADE ABIODUN</p>
+    </section>
+
+
+    <!-- javascript to make the navbar responsive -->
+    <script>
+        var navLinks = document.getElementById("navLinks")
+        function showMenu() {
+            navLinks.style.right = "0"
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px"
+        }
+    </script>
+</body>
+
+</html>

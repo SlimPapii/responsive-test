@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./fontawesome-free-5.15.4-web/fontawesome-free-5.15.4-web/css/all.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="./images/1.jpg"></a>
+            <div class="nav-links" id="navLinks">
+                <!-- the id here is put for the implementation of javascript -->
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <!-- Fontawesome added untop of the ul link to close the navbar (the onclick i just added is for the navbar to be responsive with the help of javascript) -->
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">REGISTER</a></li>
+                    <li><a href="Blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+            <!-- outside the entire div that holds the link but within the parent nav housing the div that holds the link so as to be beside the links (the onclick showmenu i added now is just for it to be responsive with the help of javascript) -->
+        </nav>
+        <h1>Our Certification & Online Programs for 2021</h1>
+    </section><!-- section1 ends -->
+
+    <!-- ------------blog page content-------- -->
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="./images/machine1.PNG" alt="">
+                <h2>Our Certification & Online Programs for 2021</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab placeat inventore esse suscipit dolor, repellendus minima aliquid odit quos asperiores quas quisquam facere, obcaecati beatae ipsam dolores quaerat quia magnam!</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia illo nesciunt libero exercitationem praesentium officia quo dolorum? Distinctio dolore eos mollitia quas, nostrum iusto numquam quos in doloremque! Placeat et minima amet natus sit eum, dignissimos maxime alias mollitia pariatur quas commodi nam ea facere? Temporibus nam aperiam quod totam.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio non, molestiae exercitationem impedit, dolorem aliquam temporibus in id ut itaque soluta ab sunt aut suscipit fugiat, excepturi mollitia ullam iusto saepe nobis omnis maiores voluptas cupiditate! Dolor exercitationem ab ducimus repudiandae quae similique eum aut numquam ad provident quo, possimus eaque est illo. Nemo voluptatem quis, accusantium commodi ea dolorum officiis ratione ipsum eius! Non saepe et consectetur dicta reiciendis.</p>
+                <br>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium laboriosam porro consequatur alias adipisci dolore inventore ad saepe odit, natus, possimus asperiores voluptate perferendis distinctio incidunt mollitia excepturi id nemo? Doloremque et unde adipisci recusandae eaque ab, corporis tempore officia officiis modi quia odio nisi provident, odit, pariatur repellendus soluta.</p>
+
+
+                <div class="comment-box">
+                    <h3>Leave a comment-box</h3>
+
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter Name">
+                        <input type="email" placeholder="Enter Email">
+                        <textarea rows="5" placeholder="Your comment"></textarea>
+                        <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                    </form>
+                </div>
+
+
+            </div>
+            <div class="blog-right">
+                <h3>Post Categories</h3>
+                <div>
+                    <span>Business Analytics</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>Data Science</span>
+                    <span>28</span>
+                </div>
+                <div>
+                    <span>Machine Learning</span>
+                    <span>15</span>
+                </div>
+                <div>
+                    <span>Computer Science</span>
+                    <span>34</span>
+                </div>
+                <div>
+                    <span>AutoCAD</span>
+                    <span>42</span>
+                </div>
+                <div>
+                    <span>Journalism</span>
+                    <span>22</span>
+                </div>
+                <div>
+                    <span>Commerce</span>
+                    <span>30</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- -------footer------- -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea non ex, atque rem alias beatae eius adipisci
+            quibusdam impedit. Odit porro fugit eaque esse pariatur. <br> ipsum dolor sit amet consectetur adipisicing
+            elit. Maxime maiores, esse perspiciatis asperiores laborum iste quia autem reprehenderit?</p>
+        <div class="icons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin-in"></i>
+        </div>
+        <p>Made with <i class="far fa-heart"></i> by OLONADE ABIODUN</p>
+    </section>
+
+    <!-- javascript to make the navbar responsive -->
+    <script>
+        var navLinks = document.getElementById("navLinks")
+        function showMenu() {
+            navLinks.style.right = "0"
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px"
+        }
+    </script>
+</body>
+
+</html>
